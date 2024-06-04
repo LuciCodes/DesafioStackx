@@ -1,0 +1,63 @@
+{
+  "api": {
+    "stxApiPessoas": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "stxApiPessoasLambda"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "stxApiPessoasLambda": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "stxPessoas"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_stxApiPessoasLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "stxApiPessoasLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_stxApiPessoasLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "stxApiPessoasLambda"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "stxPessoas": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    }
+  }
+}

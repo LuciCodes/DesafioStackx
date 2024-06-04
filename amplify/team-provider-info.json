@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-desafiostackx-dev-0304e-authRole",
+      "UnauthRoleArn": "arn:aws:iam::679586207183:role/amplify-desafiostackx-dev-0304e-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::679586207183:role/amplify-desafiostackx-dev-0304e-authRole",
+      "Region": "sa-east-1",
+      "DeploymentBucketName": "amplify-desafiostackx-dev-0304e-deployment",
+      "UnauthRoleName": "amplify-desafiostackx-dev-0304e-unauthRole",
+      "StackName": "amplify-desafiostackx-dev-0304e",
+      "StackId": "arn:aws:cloudformation:sa-east-1:679586207183:stack/amplify-desafiostackx-dev-0304e/bca3c0a0-2249-11ef-b33f-0a9480ee2a93",
+      "AmplifyAppId": "drt4j55s9eads"
+    },
+    "categories": {
+      "function": {
+        "stxApiPessoasLambda": {
+          "deploymentBucketName": "amplify-desafiostackx-dev-0304e-deployment",
+          "s3Key": "amplify-builds/stxApiPessoasLambda-63584c493462416c5674-build.zip"
+        }
+      },
+      "storage": {
+        "stxPessoas": {}
+      },
+      "api": {
+        "stxApiPessoas": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "resourceName": "stxPessoas",
+  "tableName": "stxPessoas",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

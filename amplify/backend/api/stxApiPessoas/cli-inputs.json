@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/pessoas": {
+      "name": "/pessoas",
+      "lambdaFunction": "stxApiPessoasLambda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
